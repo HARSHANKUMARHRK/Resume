@@ -16,3 +16,8 @@
 1338	🟩	:large_green_square:
 1339	🟪	:large_purple_square:
 1340	🟫	:large_brown_square:
+
+
+
+
+integrate resume using rasa bot

@@ -73,7 +73,8 @@ if(choice=="Projects"):
 
     if(ch=="College Symposium QR code generator"):
         st.subheader("Basic details form and QR code generator in Streamlit")
-        st.write("🟩Our college is hosting a symposium, so my team and I volunteered to assist our seniors with the building of a web app to collect basic registration information. Once registered, information is then exported to a CSV file for future use, and all information is stored in a QR code. Then the enrolled candidate is subsequently sent the QR code through registered mail ID.")
+        st.write("🟩Our college is hosting a symposium, so my team and I volunteered to support our seniors with the building of a web app to collect basic registration information. Once registered, information is then exported to a CSV file for future use, and all information is stored in a QR code. Then the enrolled candidate is subsequently sent the QR code through registered mail ID.")
+    
         st.subheader("Technology Used")
         st.write("1.Streamlit")
         st.write("2.QR Code")
@@ -83,7 +84,52 @@ if(choice=="Projects"):
 
     if(ch=="AI word annotator"):
         st.subheader("AI word annotator")
-        st.write("🟥")
+        st.write("🟥A tool similar to Grammarly, AI Word Annotator uses natural language processing (textblob) and is applied in a web application to fix misspelt words that are related to the word in dispute.")
+        st.subheader("Technology Used")
+        st.write("1.Streamlit")
+        st.write("2.Textblob")
+        st.write("3.text_annotator")
+        st.subheader("Source Code")
+        st.write("I have pushed all of my codes to github in my github handle by private repository. Please contact me via email if you want collaborator access.")
+        st.write("check out my github handle [link] https://github.com/HARSHANKUMARHRK")
+
+    if(ch=="Unsupervised K-Means clustering"):
+        st.subheader("K-means clustering")
+        st.write("🟪K-Means clustering transforms unlabeled groups of data into labelled groups of data. It is an unsupervised machine learning technique. I converted an unlabeled mall dataset into labelled data by determining the K-Means value.")
+        st.subheader("Technology Used")
+        st.write("1.K-Means")
+        st.write("2.Regressions")
+        st.write("3.Matplotlib")
+        st.write("4.Seaborn")
+        st.write("5.Pandas")
+        st.subheader("Source Code")
+        st.write("I have pushed all of my codes to github in my github handle by private repository. Please contact me via email if you want collaborator access.")
+        st.write("check out my github handle [link] https://github.com/HARSHANKUMARHRK")
+
+
+if(choice=="Contact"):
+    st.subheader("Contact Details")
+    st.image("github.png",width=60)
+    if st.button("github profile"):
+        st.write("https://github.com/HARSHANKUMARHRK")
+    st.image("med.png",width=120)
+    if st.button("blog page link"):
+        st.write("https://medium.com/@harshankumarhrk")
+    st.image("mai.jpg",width=60)
+    if st.button("mail id"):
+        st.success("harshankumarhrk@gmail.com")
+    st.image("linkedin.png",width=120)
+    if st.button("linkedin profile"):
+        st.write("https://www.linkedin.com/in/kishore-harshan-kumar-388279224/")
+    st.image("ph.png",width=60)
+    if st.button("number"):
+        st.write("7540081803")
+    st.image("Instagram.png",width=80)
+    if st.button("Handle"):
+        st.write("https://www.instagram.com/harshankumarhrk/")
+
+
+
         
 
 
