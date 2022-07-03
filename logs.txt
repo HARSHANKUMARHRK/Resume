@@ -1,0 +1,18 @@
+	:large_green_circle:
+    	:large_purple_circle:
+
+
+
+
+        :large_orange_circle:
+1330	🟡	:large_yellow_circle:
+1331	🟢	:large_green_circle:
+1332	🟣	:large_purple_circle:
+1333	🟤	:large_brown_circle:
+1334	🟥	:large_red_square:
+1335	🟦	:large_blue_square:
+1336	🟧	:large_orange_square:
+1337	🟨	:large_yellow_square:
+1338	🟩	:large_green_square:
+1339	🟪	:large_purple_square:
+1340	🟫	:large_brown_square:
