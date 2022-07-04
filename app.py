@@ -4,19 +4,21 @@ import pandas as pd
 st.title("Resume")
 st.subheader("About Me")
 
-menu=["","Educational Details","Skill Summary","Work Experience","Projects","Contact"]
+menu=["","Educational Details","Skill Summary","Work Experience","Projects","Online course certifications","Articles","Contact"]
 choice=st.sidebar.selectbox("Menu",menu)
 if(choice=="Educational Details"):
     a = st.container()
     b = st.container()
     with a:
-        st.title("College Details and School Details")
+        st.title("College Details,School Details and additional course completion")
     
     with b:
         data= pd.read_csv("edu.csv")
         data2=pd.read_csv("sch.csv")
+        data3=pd.read_csv("ext.csv")
         st.table(data)
         st.table(data2)
+        st.table(data3)
 
 if(choice=="Projects"):
     m1=["","Hand Writing (Good or Bad Prediction)","Face Recognition and Absentees Notifying Model","Data Mining","Virtual Chatbot","College Symposium QR code generator","AI word annotator","Unsupervised K-Means clustering","Web Apps"]
@@ -127,6 +129,65 @@ if(choice=="Contact"):
     st.image("Instagram.png",width=80)
     if st.button("Handle"):
         st.write("https://www.instagram.com/harshankumarhrk/")
+
+
+if(choice=="Online course certifications"):
+    st.title("Certifications")
+    st.subheader("Google Data Analytics:")
+    st.image("google.jpeg")
+    st.subheader("AWS:")
+    st.image("AWS.jpeg")
+    st.subheader("Diploma In Step Into RPA:")
+    st.image("RPA.jpeg")
+    st.subheader("K-Means:")
+    st.image("kmeans.jpeg")
+    st.subheader("MongoDB:")
+    st.image("mongodb.jpeg")
+    st.subheader("QR Project:")
+    st.image("qr.jpeg")
+    st.subheader("LINUX:")
+    st.image("linux.jpeg")
+    st.subheader("Credit Card Fraud Detection:")
+    st.image("credit.jpeg")
+    st.subheader("Flask:")
+    st.image("flask.jpeg")
+    st.subheader("Data Mining:")
+    st.image("data.jpeg")
+    st.subheader("Pygame:")
+    st.image("pygame.jpeg")
+    st.subheader("ChatBOT:")
+    st.image("chatbot.jpeg")
+    st.subheader("Textblob")
+    st.image("text.jpeg")
+    st.subheader("Webinar on Bilding ChatBOT:")
+    st.image("webinar.jpeg")
+    st.subheader("Nestle Virtual Internship:")
+    st.image("nestle.jpeg")
+
+if(choice=="Articles"):
+    st.title("Medium Articles")  
+    st.warning("Follow Me on Medium For More Technical Stuffs")
+    st.image("med.png",width=120)
+    if st.button("blog page link"):
+        st.write("https://medium.com/@harshankumarhrk")
+    df=pd.read_csv("med.csv")
+    st.table(df)  
+
+if(choice=="Work Experience"):
+    st.title("Work Experience")
+    st.subheader("Internships:")
+    st.subheader("**TactLabs**")
+     
+    st.image("tactlabs.jpeg",width=500)
+    st.subheader("Role-Developer Intern") 
+    st.write("The Canadian company TactLabs is a technological organisation with a small research team that specialises in MLOps (MaaMs) and ML-related activities. In this organisation, I learned a lot of technical information (priorly on machine learning). More than that, I had great team members and a senior leader who helped us learn more. This platform makes more opportunities available to Tamil Nadu's public school children. We interns will conduct knowledge transfer sessions for these students, which will increase their interest both technically and emotionally.")
+    st.subheader("**National Engineering Olympiad**")
+    st.image("neo.png",width=150)
+    st.write("Gained knowledge about digital marketing and learned to do marketing in different ideas and innovations ")
+    
+    
+
+   
 
 
 
