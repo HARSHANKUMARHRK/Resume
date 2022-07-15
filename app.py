@@ -25,7 +25,7 @@ if(choice=="Educational Details"):
 
 if(choice=="Projects"):
     m1=["","Hand Writing (Good or Bad Prediction)","Face Recognition and Absentees Notifying Model","Data Mining","Virtual Chatbot","College Symposium QR code generator","AI word annotator","Unsupervised K-Means clustering","Web Apps"]
-    ch=st.sidebar.selectbox("projects",m1)
+    ch=st.selectbox("projects",m1)
     if(ch=="Hand Writing (Good or Bad Prediction)"):
         st.subheader("Hand Writing Predictor Model")
         st.write("🟡 Using trained images, this algorithm predicts the best and worst handwriting based on accuracy (trained image is standard English Alphabets). The predicted model will return good handwriting if its accuracy is the highest, and terrible handwriting if its accuracy is the lowest. I employed Tensorflow, Scikit-Learn, Numpy, and Ml Flow ")
