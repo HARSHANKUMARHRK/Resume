@@ -5,7 +5,7 @@ st.title("Resume")
 m2=["About Me","Menu"]
 ch2=st.selectbox("Informations",m2)
 if(ch2=="About Me"):
-    st.image("mine.jpeg")
+    
     st.title("About Me")
 
     st.subheader("Myself, R.Kishore Harshan Kumar im currently pursuing BTech.Artificial Intelligence And Data Science in St Joseph's College Of Engineering. i have done my schoolings in Kamlavati Senior Secondary School (CBSE). im from BIO stream background therefore didn't initially have much knowledge of computer science and its various branches. I'm quite happy to be working in this profession and eager to learn more technical information. These technical issues always require me to start my searches over. As a student of computer science, I'm quite excited to go on this path of new experiences.")
