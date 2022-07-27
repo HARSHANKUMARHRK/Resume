@@ -11,7 +11,7 @@ if(ch2=="About Me"):
     st.subheader("Myself, R.Kishore Harshan Kumar im currently pursuing BTech.Artificial Intelligence And Data Science in St Joseph's College Of Engineering. i have done my schoolings in Kamlavati Senior Secondary School (CBSE). im from BIO stream background therefore didn't initially have much knowledge of computer science and its various branches. I'm quite happy to be working in this profession and eager to learn more technical information. These technical issues always require me to start my searches over. As a student of computer science, I'm quite excited to go on this path of new experiences.")
 
 if(ch2=="Menu"):
-    menu=["","Educational Details","Skill Summary","Work Experience","Technolgies Worked On","Projects","Online course certifications","Articles","Contact"]
+    menu=["Drag down","Educational Details","Skill Summary","Work Experience","Technolgies Worked On","Projects","Online course certifications","Articles","Contact"]
     choice=st.sidebar.selectbox("Menu",menu)
     if(choice=="Educational Details"):
         a = st.container()
@@ -28,7 +28,7 @@ if(ch2=="Menu"):
             st.table(data3)
 
     if(choice=="Projects"):
-        m1=["","Hand Writing (Good or Bad Prediction)","Face Recognition and Absentees Notifying Model","Data Mining","Virtual Chatbot","College Symposium QR code generator","AI word annotator","Unsupervised K-Means clustering","Web Apps"]
+        m1=["Drag down","Hand Writing (Good or Bad Prediction)","Face Recognition and Absentees Notifying Model","Data Mining","Virtual Chatbot","College Symposium QR code generator","AI word annotator","Unsupervised K-Means clustering","Web Apps"]
         ch=st.selectbox("projects",m1)
         if(ch=="Hand Writing (Good or Bad Prediction)"):
             st.subheader("Hand Writing Predictor Model")
@@ -192,6 +192,34 @@ if(ch2=="Menu"):
         st.image("neo.png",width=150)
         st.write("Gained knowledge about digital marketing and learned to do marketing in different ideas and innovations ")
     
+    if(choice=="Skill Summary"):
+        st.subheader("Communication Skill")
+        st.write("*Taken many seminars as students in college")
+        st.write("*Can converse in 3 different languages 1.Hindi,2.English,3.Tamil")
+        st.write("Member of English club in my schooling ")
+        st.subheader("Organization skill:")
+        st.write("*Done many intra school events")
+        st.write("Organized a small evnt for school students")
+        st.subheader("Leadership skill:")
+        st.write("*Been leader at my schoolings")
+        st.write("Been football team captain ")
+
+    if(choice=="Technolgies Worked On"):
+        st.title("Technolgies")
+        st.subheader("Streamlit")
+        st.subheader("Flask")
+        st.subheader("Amazon Web Services")
+        st.subheader("ML flow")
+        st.subheader("Click House DB")
+        st.subheader("MongoDB")
+        st.subheader("Open CV")
+        st.subheader("Selenium")
+        st.subheader("Maria DB")
+        st.subheader("Zen ML(little idea)")
+        
+
+
+
     
 
    
