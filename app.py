@@ -5,6 +5,7 @@ st.title("Resume")
 m2=["About Me","Menu"]
 ch2=st.selectbox("Informations",m2)
 if(ch2=="About Me"):
+    st.image("mine.jpeg")
     
     st.title("About Me")
 
