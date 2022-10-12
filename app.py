@@ -1,7 +1,8 @@
+
 import streamlit as st
 import pandas as pd
 
-st.title("Resume")
+st.markdown("<h1 style='text-align: center; color: #CC704B;'>RESUME</h1> ",unsafe_allow_html=True)
 m2=["About Me","Menu"]
 ch2=st.selectbox("Informations",m2)
 if(ch2=="About Me"):
@@ -12,7 +13,7 @@ if(ch2=="About Me"):
     st.subheader("Myself, R.Kishore Harshan Kumar im currently pursuing BTech.Artificial Intelligence And Data Science in St Joseph's College Of Engineering. i have done my schoolings in Kamlavati Senior Secondary School (CBSE). im from BIO stream background therefore didn't initially have much knowledge of computer science and its various branches. I'm quite happy to be working in this profession and eager to learn more technical information. These technical issues always require me to start my searches over. As a student of computer science, I'm quite excited to go on this path of new experiences.")
 
 if(ch2=="Menu"):
-    menu=["Drag down","Educational Details","Skill Summary","Work Experience","Technolgies Worked On","Projects","Online course certifications","Articles","Contact"]
+    menu=["Drag down","Educational Details","Skill Summary","Work Experience","Technolgies Worked On","Projects","Online course certifications","Articles","Languages known","Publications","Contact"]
     choice=st.sidebar.selectbox("Menu",menu)
     if(choice=="Educational Details"):
         a = st.container()
@@ -183,7 +184,12 @@ if(ch2=="Menu"):
 
     if(choice=="Work Experience"):
         st.title("Work Experience")
+        
         st.subheader("Internships:")
+        st.subheader("**Indie Spirit**")
+        st.image("new.jpeg")
+        st.write("It is the new startup organization which encourage young minds to achieve greater heights.Im currently working as a Data Analyst Intern and working on stock market analysis domain ")
+
         st.subheader("**TactLabs**")
      
         st.image("tactlabs.jpeg",width=500)
@@ -217,7 +223,21 @@ if(ch2=="Menu"):
         st.subheader("Selenium")
         st.subheader("Maria DB")
         st.subheader("Zen ML(little idea)")
-        
+
+    if(choice=="Publications"):
+        st.write("1. Journal Research work on Real estate and payday loans viamachine learning analysis")
+        st.success("https://arxiv.org/abs/2205.15320")
+
+    if(choice=="Drag down"):
+        st.title("Drag Down to continue exploring...")
+
+    if(choice=="Languages known"):
+        st.info("Python")
+        st.info("Julia")
+        st.info("C")
+        st.info("Java")
+        st.info("R")
+
 
 
 
