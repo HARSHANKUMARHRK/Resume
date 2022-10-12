@@ -1,21 +1,25 @@
 
 import streamlit as st
 import pandas as pd
+from streamlit_option_menu import option_menu
 
 st.markdown("<h1 style='text-align: center; color: #CC704B;'>RESUME</h1> ",unsafe_allow_html=True)
 m2=["About Me","Menu"]
 ch2=st.selectbox("Informations",m2)
 if(ch2=="About Me"):
-    st.image("mine.jpeg")
+    st.image("my.jpg")
     
     st.title("About Me")
 
     st.subheader("Myself, R.Kishore Harshan Kumar im currently pursuing BTech.Artificial Intelligence And Data Science in St Joseph's College Of Engineering. i have done my schoolings in Kamlavati Senior Secondary School (CBSE). im from BIO stream background therefore didn't initially have much knowledge of computer science and its various branches. I'm quite happy to be working in this profession and eager to learn more technical information. These technical issues always require me to start my searches over. As a student of computer science, I'm quite excited to go on this path of new experiences.")
 
 if(ch2=="Menu"):
-    menu=["Drag down","Educational Details","Skill Summary","Work Experience","Technolgies Worked On","Projects","Online course certifications","Articles","Languages known","Publications","Contact"]
-    choice=st.sidebar.selectbox("Menu",menu)
-    if(choice=="Educational Details"):
+    menu=option_menu(None,["Educational Details","Skill Summary","Work Experience","Technolgies Worked On","Projects","Online course certifications","Articles","Languages known","Publications","Contact"],
+    icons=['book', "info-square-fill","person-workspace","laptop","cast","award","book","filetype-py","journal-bookmark","person-lines-fill"],
+    menu_icon="cast", default_index=0, orientation="horizontal")
+
+   # choice=st.sidebar.selectbox("Menu",menu)
+    if(menu=="Educational Details"):
         a = st.container()
         b = st.container()
         with a:
@@ -29,7 +33,7 @@ if(ch2=="Menu"):
             st.table(data2)
             st.table(data3)
 
-    if(choice=="Projects"):
+    if(menu=="Projects"):
         m1=["Drag down","Hand Writing (Good or Bad Prediction)","Face Recognition and Absentees Notifying Model","Data Mining","Virtual Chatbot","College Symposium QR code generator","AI word annotator","Unsupervised K-Means clustering","Web Apps"]
         ch=st.selectbox("projects",m1)
         if(ch=="Hand Writing (Good or Bad Prediction)"):
@@ -118,7 +122,7 @@ if(ch2=="Menu"):
             st.write("check out my github handle [link] https://github.com/HARSHANKUMARHRK")
 
 
-    if(choice=="Contact"):
+    if(menu=="Contact"):
         st.subheader("Contact Details")
         st.image("github.png",width=60)
         if st.button("github profile"):
@@ -140,7 +144,9 @@ if(ch2=="Menu"):
             st.write("https://www.instagram.com/harshankumarhrk/")
 
 
-    if(choice=="Online course certifications"):
+    if(menu=="Online course certifications"):
+        st.title("Tech-Pitch:Winners")
+        st.image("tech.jpg")
         st.title("Certifications")
         st.subheader("Google Data Analytics:")
         st.image("google.jpeg")
@@ -173,7 +179,7 @@ if(ch2=="Menu"):
         st.subheader("Nestle Virtual Internship:")
         st.image("nestle.jpeg")
 
-    if(choice=="Articles"):
+    if(menu=="Articles"):
         st.title("Medium Articles")  
         st.warning("Follow Me on Medium For More Technical Stuffs")
         st.image("med.png",width=120)
@@ -182,7 +188,7 @@ if(ch2=="Menu"):
         df=pd.read_csv("med.csv")
         st.table(df)  
 
-    if(choice=="Work Experience"):
+    if(menu=="Work Experience"):
         st.title("Work Experience")
         
         st.subheader("Internships:")
@@ -199,7 +205,7 @@ if(ch2=="Menu"):
         st.image("neo.png",width=150)
         st.write("Gained knowledge about digital marketing and learned to do marketing in different ideas and innovations ")
     
-    if(choice=="Skill Summary"):
+    if(menu=="Skill Summary"):
         st.subheader("Communication Skill")
         st.write("*Taken many seminars as students in college")
         st.write("*Can converse in 3 different languages 1.Hindi,2.English,3.Tamil")
@@ -211,7 +217,7 @@ if(ch2=="Menu"):
         st.write("*Been leader at my schoolings")
         st.write("Been football team captain ")
 
-    if(choice=="Technolgies Worked On"):
+    if(menu=="Technolgies Worked On"):
         st.title("Technolgies")
         st.subheader("Streamlit")
         st.subheader("Flask")
@@ -224,14 +230,14 @@ if(ch2=="Menu"):
         st.subheader("Maria DB")
         st.subheader("Zen ML(little idea)")
 
-    if(choice=="Publications"):
+    if(menu=="Publications"):
         st.write("1. Journal Research work on Real estate and payday loans viamachine learning analysis")
         st.success("https://arxiv.org/abs/2205.15320")
 
-    if(choice=="Drag down"):
-        st.title("Drag Down to continue exploring...")
+    # if(menu=="Drag down"):
+    #     st.title("Drag Down to continue exploring...")
 
-    if(choice=="Languages known"):
+    if(menu=="Languages known"):
         st.info("Python")
         st.info("Julia")
         st.info("C")
