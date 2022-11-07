@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 
+
 st.markdown("<h1 style='text-align: center; color: #CC704B;'>RESUME</h1> ",unsafe_allow_html=True)
 m2=["About Me","Menu"]
 ch2=st.selectbox("Informations",m2)
